@@ -1,0 +1,193 @@
+:root {
+  --main-color: #7cb8eb;
+  --secondary-color: #4f83d1;
+  --custom-btn-bg-color: #4f83d1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.site-header {
+  background-color: var(--main-color);
+}
+
+nav .links-of-page {
+  display: none;
+  top: 30px;
+  right: 201px;
+  width: 170px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.links-of-page.show {
+  display: block;
+}
+nav .links-of-page::before {
+  content: "";
+  position: absolute;
+  right: 117px;
+  top: -25px;
+  border-style: solid;
+  border: 15px solid;
+  border-color: transparent transparent white transparent;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  color: white;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+#links li:hover:not(#btn) {
+  color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  nav {
+    top: 108px;
+    color: #000000;
+    background-color: white;
+    z-index: 100 !important;
+  }
+  .log {
+    color: var(--main-color);
+  }
+  #links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 76px;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.4s linear;
+    margin: 0;
+  }
+  .links-of-page {
+    top: 167px !important;
+    left: 37% !important;
+  }
+  #btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+  }
+}
+
+.exploere-btn:hover,
+#btn:hover {
+  /* border: none !important; */
+  border-color: transparent !important;
+  background-color: var(--secondary-color) !important;
+  color: white !important;
+}
+
+section .content {
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  transition: animation 0.5s;
+  background: url(../images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  animation: change 10s infinite ease-in-out;
+}
+section .content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7cb7eb9f;
+}
+.introduction-btn,
+.learn-more-btn {
+  background-color: var(--custom-btn-bg-color);
+  transition: background-color 0.3s;
+}
+.introduction-btn:hover,
+.learn-more-btn:hover {
+  background-color: var(--main-color);
+}
+.exploere-btn,
+#btn {
+  transition: 0.3s;
+}
+
+section .content svg {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+}
+.partners-section .title h1 {
+  box-shadow: 0px 0px 10px #000;
+}
+.partners-section .row svg {
+  transition: transform 0.3s;
+}
+.partners-section .row svg:hover {
+  transform: scale(1.2);
+}
+
+.services-section .boxes .box .image img {
+  transition: all 0.3s !important;
+}
+
+footer .links li,
+footer .office .office-links,
+footer .Services-links li,
+footer .site-footer-bottom .designed,
+footer .site-footer-bottom .create {
+  transition: color 0.3s;
+}
+
+footer .links li:hover,
+footer .Services-links li:hover,
+footer .office .office-links:hover,
+footer .office .office-icons i:hover,
+footer .site-footer-bottom .designed:hover,
+footer .site-footer-bottom .create:hover {
+  color: #376cbb;
+}
+
+.introduction-btn span {
+  animation: loop-text 0.3s linear infinite !important;
+}
+
+@keyframes change {
+  0% {
+    background: url(../images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  33.33% {
+    background: url(../images/slideshow/afro-woman-holding-bucket-with-cleaning-items.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  66.6% {
+    background: url(../images/slideshow/unrecognizable-cleaner-walking-into-hotel-room-with-tools-detergents.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url(../images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
