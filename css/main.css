@@ -7,7 +7,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .site-header {
   background-color: var(--main-color);
 }
@@ -110,6 +112,12 @@ section .content .overlay {
   height: 100%;
   background-color: #7cb7eb9f;
 }
+
+.title-text {
+  color: rgb(233, 233, 10);
+  transition: 3s;
+}
+
 .introduction-btn,
 .learn-more-btn {
   background-color: var(--custom-btn-bg-color);

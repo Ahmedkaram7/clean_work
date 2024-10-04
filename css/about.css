@@ -1,0 +1,36 @@
+.about {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  transition: animation 0.5s;
+  background: url(../images/high-angle-woman-cleaning-floors.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7cb7eb9f;
+}
+
+.meet-pepole-section .info-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -38px;
+  border: 21px solid;
+  border-color: transparent white transparent transparent;
+}
+
+@media (max-width: 768px) {
+  .meet-pepole-section .info-card::before {
+    border: none;
+  }
+}

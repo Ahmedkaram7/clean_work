@@ -15,15 +15,6 @@ button.addEventListener("click", showNav);
 // dropdown links
 let buttonPageLink = document.getElementById("pages-btn");
 let linksOfPages = document.getElementById("links-of-page ");
-// linksOfPages.style.display = "none";
-// function showLinks() {
-//   if (linksOfPages.style.display === "none") {
-//     linksOfPages.style.display = "block";
-//   } else {
-//     linksOfPages.style.display = "none";
-//   }
-// }
-// buttonPageLink.addEventListener("click", showLinks);
 
 buttonPageLink.addEventListener("click", (event) => {
   linksOfPages.classList.toggle("show");
@@ -33,6 +24,8 @@ buttonPageLink.addEventListener("click", (event) => {
 window.addEventListener("click", () => {
   linksOfPages.classList.remove("show");
 });
+
+export { button, links, buttonPageLink, linksOfPages };
 
 //  Automatically Change Image in Every Second
 // let content = document.querySelector(".content");
@@ -58,6 +51,7 @@ let officeImage = document.querySelector(".office-image");
 officeImage.addEventListener("mouseover", () => {
   officeImage.src = "images/services/person-taking-care-office.jpg";
 });
+
 officeImage.addEventListener("mouseleave", () => {
   officeImage.src = "images/services/people-taking-care-office-cleaning.jpg";
 });
@@ -86,3 +80,14 @@ factoryImage.addEventListener("mouseleave", () => {
   factoryImage.src =
     "images/services/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg";
 });
+
+// change text automatic
+
+let titleText = document.querySelector(".title-text");
+setInterval(() => {
+  let textArray = ["House", "Office", "Kitchen"];
+  let textCout = textArray.length;
+  let num = Math.floor(Math.random() * textCout);
+  // console.log(num);
+  titleText.textContent = textArray[num];
+}, 3000);
