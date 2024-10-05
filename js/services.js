@@ -25,25 +25,6 @@ window.addEventListener("click", () => {
   linksOfPages.classList.remove("show");
 });
 
-//  Automatically Change Image in Every Second
-// let content = document.querySelector(".content");
-// let images = [
-//   "/images/slideshow/unrecognizable-cleaner-walking-into-hotel-room-with-tools-detergents.jpg",
-//   "/images/slideshow/afro-woman-holding-bucket-with-cleaning-items.jpg",
-//   "/images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg",
-// ];
-
-// let imagesCount = images.length;
-
-// setInterval(
-//   () => {
-//     let number = Math.floor(Math.random() * imagesCount);
-//     content.style.background = `url(${images[number]})`;
-//   },
-//   3000,
-//   Infinity
-// );
-
 // hover on iamge services
 let officeImage = document.querySelector(".office-image");
 officeImage.addEventListener("mouseover", () => {
@@ -78,14 +59,3 @@ factoryImage.addEventListener("mouseleave", () => {
   factoryImage.src =
     "images/services/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg";
 });
-
-// change text automatic
-
-let titleText = document.querySelector(".title-text");
-setInterval(() => {
-  let textArray = ["House", "Office", "Kitchen"];
-  let textCout = textArray.length;
-  let num = Math.floor(Math.random() * textCout);
-  // console.log(num);
-  titleText.textContent = textArray[num];
-}, 3000);

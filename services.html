@@ -8,7 +8,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
-    <title>About Us</title>
+    <title>Services</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -52,7 +52,7 @@
         <ul id="links"
           class="flex items-center justify-center text-base relative capitalize ">
           <li class="m-4"> <a href="index.html">home</a> </li>
-          <li class="active m-4"> <a href="about.html">About As</a> </li>
+          <li class="m-4"> <a href="about.html">About As</a> </li>
           <li class="m-4" id="pages-btn"> <a href="#">Pages <i
                 class="fa-solid fa-chevron-down"></i>
             </a>
@@ -66,7 +66,7 @@
           <!-- links of pages -->
           <ul id="links-of-page "
             class="absolute bg-white text-gray-700 capitalize p-4 rounded-md links-of-page">
-            <li class="pt-1 font-medium"><a href="services.html">Our
+            <li class="active pt-1 font-medium"><a href="services.html">Our
                 Srevices</a></li>
             <li class="pt-3 pb-3 font-medium"><a href="commingson.html">coming
                 Soon</a></li>
@@ -86,83 +86,207 @@
       <div class="overlay">
         <div
           class="container mx-auto pr-4 pl-4 flex items-center justify-between absolute bottom-7 left-0 right-0 ">
-          <h1 class="text-5xl font-bold text-white ">About Us</h1>
+          <h1 class="text-5xl font-bold text-white ">Services Listing</h1>
           <p class="text-white"><span
               class="text-blue-400 hover:text-blue-800 transition"><a
-                href="index.html">Home</a></span> / About
-            Us</p>
+                href="index.html">Home</a></span> / Services Listing</p>
         </div>
       </div>
     </div>
     <!-- end home -->
+
     <!-- services sections -->
-    <div class="cleaning-service pt-24 pb-24">
-      <div
-        class="container mx-auto pl-4 pr-4 flex items-center justify-between flex-col md:flex-row">
-        <img src="images/cleaning-concept-with-man-showing-business-card.jpg"
-          alt="cleaning"
-          class="w-full md:w-1/2 rounded-3xl mr-0 md:mr-14 mb-8 md:mb-0">
-        <div class="text ">
-          <h1 class="text-4xl font-bold mb-8">Cleaning Service Agency Since
-            2018</h1>
-          <p class="text-gray-600 mb-5">Tooplate website provides a variety of
-            latest HTML templates or
-            Bootstrap 5 Themes for your <a href="#"
-              class="text-blue-500">business websites.</a></p>
-          <p class="text-gray-600 mb-14">Clean Work is a blue color theme HTML
-            CSS template for your company
-            website. You may use this template for any purpose.</p>
-          <a href="#"
-            class="pt-4 pb-4 pl-5 pr-5 rounded-full text-white border-2 border-white text-base md:text-lg bg-blue-400 hover:bg-blue-500 transition">
-            <span>Exploere Services</span>
-          </a>
+    <div class="services-section-one pt-28 pb-28">
+      <div class="container mx-auto pr-4 pl-4">
+        <div class="boxes grid grid-cols-1 xl:grid-cols-2 gap-5">
+          <div
+            class="box flex items-stretch justify-between p-6 rounded-lg bg-blue-50 flex-col md:flex-row ">
+            <a href="#">
+              <div
+                class="services-image-wrap relative overflow-hidden rounded-lg ">
+                <div class="image rounded-lg w-full md:w-48 h-full md:h-48">
+                  <img
+                    src="images/services/people-taking-care-office-cleaning.jpg"
+                    alt="services-image"
+                    class="office-image"></div>
+                <div
+                  class="services-icon-wrap flex items-center justify-between absolute left-0 right-0 bottom-0 md:bottom-6 p-2 rounded-b-lg bg-blue-400 text-white flex-row">
+                  <p><i class="fa-solid fa-money-bill mr-3"></i> $820</p>
+                  <p><i class="fa-solid fa-clock mr-3"></i> 5 hrs</p>
+                </div>
+              </div>
+            </a>
+            <div class="info pl-4">
+              <a href="#">
+                <h1
+                  class="font-bold text-2xl mb-3 mt-7 md:mt-0 text-blue-400 hover:text-blue-500 transition ">OOffice
+                  Cleaning</h1>
+              </a>
+              <p class="mb-3 text-gray-600 ">Best Cleaning
+                Service
+                Provider
+                Ipsum dolor sit consectetur kengan</p>
+              <div
+                class="flex items-center justify-center flex-col sm:flex-row md:justify-between">
+                <div class="reviews-icons flex">
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                </div>
+                <div>
+                  <a href="#"
+                    class="bg-blue-600 block p-4 rounded-full  text-white text-sm md:text-xl mt-3 learn-more-btn">
+                    Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box flex items-stretch justify-between p-6 rounded-lg bg-blue-50 flex-col md:flex-row ">
+            <a href="#">
+              <div
+                class="services-image-wrap relative overflow-hidden rounded-lg ">
+                <div class="image rounded-lg w-full md:w-48 h-full md:h-48">
+                  <img
+                    src="images/services/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg"
+                    alt="services-image" class="kitchen-image"></div>
+                <div
+                  class="services-icon-wrap flex items-center justify-between absolute left-0 right-0 bottom-0 md:bottom-6 p-2 rounded-b-lg bg-blue-400 text-white flex-row">
+                  <p><i class="fa-solid fa-money-bill mr-3"></i> $820</p>
+                  <p><i class="fa-solid fa-clock mr-3"></i> 5 hrs</p>
+                </div>
+              </div>
+            </a>
+            <div class="info pl-4">
+              <a href="#">
+                <h1
+                  class="font-bold text-2xl mb-3 mt-7 md:mt-0 text-blue-400 hover:text-blue-500 transition ">Kitchen
+                  Cleaning</h1>
+              </a>
+              <p class="mb-3 text-gray-600 ">Best Cleaning
+                Service
+                Provider
+                Ipsum dolor sit consectetur kengan</p>
+              <div
+                class="flex items-center justify-center flex-col sm:flex-row md:justify-between">
+                <div class="reviews-icons flex">
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                </div>
+                <div>
+                  <a href="#"
+                    class="bg-blue-600 block p-4 rounded-full  text-white text-sm md:text-xl mt-3 learn-more-btn">
+                    Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- // services sections -->
 
-    <!--  meet pepole section -->
-    <div class="meet-pepole-section pt-28 pb-28 bg-blue-50 ">
-      <h1 class="container mx-auto pl-4 pr-4  text-5xl font-bold mb-7">Meet
-        People</h1>
-      <div
-        class="container mx-auto pl-4 pr-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="flex  items-center  flex-wrap md:flex-nowrap">
-          <img
-            src="images/teams/happy-young-woman-wiping-kitchen-counter-wearing-yellow-gloves.jpg"
-            class="md:w-72 md:h-72 rounded-xl md:mr-10 mb-5 md:mb-0 meet-images ">
+    <div class="services-section-two bg-blue-50 pt-28 pb-28">
+      <div class="container mx-auto pr-4 pl-4">
+        <div class="boxes grid grid-cols-1 xl:grid-cols-2 gap-5">
+
           <div
-            class="info-card bg-white p-5 rounded-lg w-full md:w-80  md:min-h-64 relative">
-            <h1 class="text-3xl font-bold mb-3">Marie</h1>
-            <p class="text-gray-700 mb-3 pb-2">Lorem ipsum dolor sit amet,
-              consectetur adipiscing tempor
-              incididunt dolore magna</p>
-            <a href="tel:110-220-9800"
-              class="hover:text-blue-400 transition pt-2 border-t border-gray-400 block"><i
-                class="fa-brands fa-whatsapp"></i>
-              110-220-9800</a>
+            class="box flex items-stretch justify-between p-6 rounded-lg bg-white flex-col md:flex-row ">
+            <a href="#">
+              <div
+                class="services-image-wrap relative overflow-hidden rounded-lg ">
+                <div class="image rounded-lg w-full md:w-48 h-full md:h-48">
+                  <img
+                    src="images/services/man-polishing-car-inside-car-service.jpg"
+                    alt="services-image" class="car-image"></div>
+                <div
+                  class="services-icon-wrap flex items-center justify-between absolute left-0 right-0 bottom-0 md:bottom-6 p-2 rounded-b-lg bg-blue-400 text-white flex-row">
+                  <p><i class="fa-solid fa-money-bill mr-3"></i> $820</p>
+                  <p><i class="fa-solid fa-clock mr-3"></i> 5 hrs</p>
+                </div>
+              </div>
+            </a>
+            <div class="info pl-4">
+              <a href="#">
+                <h1
+                  class="font-bold text-2xl mb-3 mt-7 md:mt-0 text-blue-400 hover:text-blue-500 transition ">Car
+                  Washing</h1>
+              </a>
+              <p class="mb-3 text-gray-600 ">Best Cleaning
+                Service
+                Provider
+                Ipsum dolor sit consectetur kengan</p>
+              <div
+                class="flex items-center justify-center flex-col sm:flex-row md:justify-between">
+                <div class="reviews-icons flex">
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                </div>
+                <div>
+                  <a href="#"
+                    class="bg-blue-600 block p-4 rounded-full  text-white text-sm md:text-xl mt-3 learn-more-btn">
+                    Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="flex  items-center flex-wrap md:flex-nowrap ">
-          <img
-            src="images/teams/young-cleaning-man-wearing-casual-clothes.jpg"
-            class="md:w-72 md:h-72 rounded-xl md:mr-10 mb-5 md:mb-0">
+
           <div
-            class="info-card bg-white p-5 rounded-lg w-full md:w-80 md:min-h-64 relative">
-            <h1 class="text-3xl font-bold mb-3">Josh</h1>
-            <p class="text-gray-700 mb-3 pb-2">Lorem ipsum dolor sit amet,
-              consectetur adipiscing tempor
-              incididunt dolore magna</p>
-            <a href="tel:110-220-9800"
-              class="hover:text-blue-400 transition pt-2 border-t border-gray-400 block"><i
-                class="fa-brands fa-whatsapp mr-3 "></i>
-              110-220-9800</a>
+            class="box flex items-stretch justify-between p-6 rounded-lg bg-white flex-col md:flex-row">
+            <a href="#">
+              <div
+                class="services-image-wrap relative overflow-hidden rounded-lg ">
+                <div class="image rounded-lg w-full md:w-48 h-full md:h-48">
+                  <img
+                    src="images/services/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg"
+                    alt="Factory-image" class="factory-image"></div>
+                <div
+                  class="services-icon-wrap flex items-center justify-between absolute left-0 right-0 bottom-0 md:bottom-6 p-2 rounded-b-lg bg-blue-400 text-white flex-row">
+                  <p><i class="fa-solid fa-money-bill mr-3"></i> $820</p>
+                  <p><i class="fa-solid fa-clock mr-3"></i> 5 hrs</p>
+                </div>
+              </div>
+            </a>
+            <div class="info pl-4">
+              <a href="#">
+                <h1
+                  class="font-bold text-2xl mb-3 mt-7 md:mt-0 text-blue-400 hover:text-blue-500 transition ">Factory
+                  Cleaning</h1>
+              </a>
+              <p class="mb-3 text-gray-600 ">Best Cleaning
+                Service
+                Provider
+                Ipsum dolor sit consectetur kengan</p>
+              <div
+                class="flex items-center justify-center flex-col sm:flex-row md:justify-between">
+                <div class="reviews-icons flex">
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-solid fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                  <i class="fa-regular fa-star text-blue-400 text-lg"></i>
+                </div>
+                <div>
+                  <a href="#"
+                    class="bg-blue-600 block p-4 rounded-full  text-white text-sm md:text-xl mt-3 learn-more-btn">
+                    Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
-    <!-- end meet pepole section -->
+
+    <!-- end services section -->
 
     <!-- partners-section  -->
     <div class="partners-section  mb-10">
@@ -311,6 +435,7 @@
     <!-- End footer -->
 
     <!-- file javascript -->
-    <script src="js/about.js"></script>
+    <script src="js/services.js"></script>
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

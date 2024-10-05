@@ -14,6 +14,9 @@ html {
   background-color: var(--main-color);
 }
 
+.active {
+  color: var(--main-color);
+}
 nav .links-of-page {
   display: none;
   top: 30px;
@@ -45,7 +48,9 @@ nav {
   background-color: transparent;
   transition: 0.3s;
 }
-
+nav #links li {
+  transition: color 0.3s;
+}
 #links li:hover:not(#btn) {
   color: var(--main-color);
 }
@@ -172,7 +177,16 @@ footer .site-footer-bottom .create:hover {
 .introduction-btn span {
   animation: loop-text 0.3s linear infinite !important;
 }
-
+.testimonial-section {
+  position: relative;
+  background: url(../images/coffe-shop-with-wooden-walls-unfocused.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.testimonial-section .overlay {
+  background-color: #3981ecbd;
+}
 @keyframes change {
   0% {
     background: url(../images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg);
