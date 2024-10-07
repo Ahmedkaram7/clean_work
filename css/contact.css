@@ -4,16 +4,32 @@
 .contact .form .row input:focus {
   box-shadow: 0px 0px 2px 2px rgba(4, 118, 211, 0.678);
 }
-#downdrop .heddin {
-  display: none;
+
+#downdrop .options {
   position: absolute;
+  display: none;
+  transition: 0.3s;
 }
 
-#downdrop .heddin span {
+#downdrop .select-btn i {
+  font-size: 18px;
+  transition: 0.3s;
+}
+#downdrop.actives .select-btn i {
+  transform: rotate(-180deg);
+}
+#downdrop.actives {
+  box-shadow: 0px 0px 2px 2px rgba(4, 118, 211, 0.678);
+  border-radius: 8px;
+}
+#downdrop.actives .options {
+  display: block;
+}
+#downdrop .options li {
   transition: background-color 0.3s;
   border-radius: 10px;
 }
-#downdrop .heddin span:hover {
+#downdrop .options li:hover {
   background-color: gray;
   color: white;
 }

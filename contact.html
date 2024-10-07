@@ -99,8 +99,8 @@
     <!-- contact section -->
     <div class="contact pt-28 pb-28">
       <div class="container mx-auto pl-4 pr-4">
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
           <div class="contact-information ">
             <h1 class="text-3xl sm:text-5xl font-bold mb-3">We're happy to
               help</h1>
@@ -124,46 +124,51 @@
                 info@company.com</a>
             </div>
           </div>
-
           <!-- form -->
-          <div class="form bg-white shadow-2xl rounded-xl p-10 ">
+          <form action="#" method="post"
+            class="form bg-white shadow-2xl rounded-xl p-10 ">
             <h3 class="text-2xl sm:text-4xl font-semibold mb-4">Get a Free
               Quotation</h3>
             <div class="row flex items-center flex-wrap gap-3 mb-3">
               <input type="text" name="user-name" id="name"
-                placeholder="Full Name"
-                class="p-3 text-gray-700 border border-gray-200 hover:border-blue-400 outline-none rounded-lg flex-1  text-lg transition">
+                placeholder="Full Name" required
+                class="p-3 text-gray-700 border border-gray-200 hover:border-blue-400 outline-none rounded-lg w-full sm:w-auto sm:flex-1 text-sm sm:text-lg transition">
               <input type="email" name="email" id="email"
-                placeholder="info@company.com"
-                class="p-3  text-gray-700 border border-gray-200 hover:border-blue-400 outline-none rounded-lg flex-1 text-lg transition">
+                placeholder="info@company.com" required
+                class="p-3  text-gray-700 border border-gray-200 hover:border-blue-400 outline-none rounded-lg w-full sm:w-auto sm:flex-1 text-sm sm:text-lg transition">
             </div>
-
-            <div id="downdrop"
-              class="relative">
-
-              <p
-                class="p-3 text-gray-700 rounded-lg text-lg border border-gray-200 hover:border-blue-400 mb-2 flex items-center justify-between transition">
-                Services Type
-                <i class="fa-solid fa-chevron-down text-gray-700"></i>
-              </p>
-
+            <div id="downdrop" class="relative">
               <div
-                class="heddin flex justify-center p-2 bg-white shadow-2xl rounded-lg flex-col border border-gray-200 w-full">
-                <span class="p-3">services Type</span>
-                <span class="p-3">House Cleaning</span>
-                <span class="p-3">Car Washing</span>
-                <span class="p-3">Factory Cleaning</span>
-                <span class="p-3">Office Cleaning</span>
+                class="select-btn p-3 text-gray-700 rounded-lg text-sm sm:text-lg border border-gray-200 hover:border-blue-400 mb-2 flex items-center justify-between transition">
+                <p class="sBtn-text"> Services Type</p>
+                <i class="bx fa-solid fa-chevron-down text-gray-700 "></i>
               </div>
-
+              <ul
+                class="options flex justify-center p-2 bg-white shadow-2xl rounded-lg flex-col border border-gray-200 w-full">
+                <li class="option p-3">
+                  <span class="option-text ">Services Type</span>
+                </li>
+                <li class="option p-3">
+                  <span class="option-text ">House Cleaning</span>
+                </li>
+                <li class="option p-3">
+                  <span class="option-text ">Car Washing</span>
+                </li>
+                <li class="option p-3">
+                  <span class="option-text ">Factory Cleaning</span>
+                </li>
+                <li class="option p-3 ">
+                  <span class="option-text ">Office Cleaning</span>
+                </li>
+              </ul>
             </div>
-
             <textarea name="comment" id="comment"
               placeholder="comment (Optional)"
-              class="p-3 mt-3 text-gray-700 rounded-lg text-lg border border-gray-200 hover:border-blue-400 w-full min-h-36 outline-none resize-none transition "></textarea>
-          </div>
+              class="p-3 mt-3 text-gray-700 rounded-lg text-sm sm:text-lg border border-gray-200 hover:border-blue-400 w-full min-h-36 outline-none resize-none transition "></textarea>
+            <input type="submit" value="Submit Request"
+              class="mt-3 p-3 rounded-full bg-blue-400 text-white hover:bg-blue-500 transition mx-auto block">
+          </form>
         </div>
-
       </div>
     </div>
     <!-- end contact section -->

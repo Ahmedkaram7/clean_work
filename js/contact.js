@@ -1,12 +1,16 @@
-let drowpdown = document.querySelector("#downdrop p");
-let drowpdownElement = document.querySelector(".heddin");
-let span = document.querySelector(".heddin span");
+let downdrop = document.getElementById("downdrop");
+const selectBtn = document.querySelector(".select-btn");
+const sBtnText = document.querySelector(".sBtn-text");
+const options = document.querySelectorAll(".options li");
 
-drowpdown.addEventListener("click", () => {
-  // console.log("test");
-  if (drowpdownElement.style.display === "none") {
-    drowpdownElement.style.display = "flex";
-  } else {
-    drowpdownElement.style.display = "none";
-  }
+selectBtn.addEventListener("click", () => {
+  downdrop.classList.toggle("actives");
+});
+
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    let selectSpanValue = option.querySelector(".option-text").textContent;
+    sBtnText.innerText = selectSpanValue;
+    downdrop.classList.remove("actives");
+  });
 });
